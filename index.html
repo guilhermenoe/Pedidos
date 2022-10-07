@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <div id="pedidosUI">
+
+
+        <div id="cardAgua" class="cardPedido">
+            <div class="title-img">
+                <h2 class="subtitle-qtd">Peixes</h2>
+                <img src="/fish_icon.png" style="height:50px">
+            </div>
+            <div class="row-card">
+                <button class="btnPedido" onclick="adicionaPedidoMesa('Tilápia')">Tilápia</button>
+                <button class="btnPedido" onclick="adicionaPedidoMesa('Salmão')">Salmão</button>
+                <button class="btnPedido" onclick="adicionaPedidoMesa('Bacalhau')">Bacalhau</button>
+                <button class="btnPedido" onclick="adicionaPedidoMesa('Anchoveta')">Anchoveta</button>
+            </div>
+            <h2 class="subtitle-qtd">Quantidade</h2>
+            <div class="row-card-nivel2">
+                <button class="btnPedido" onclick="adicionaPedidoMesa('10 Tilápia')">10 Tilápia</button>
+                <button class="btnPedido" onclick="adicionaPedidoMesa('10 Salmão')">10 Salmão</button>
+                <button class="btnPedido" onclick="adicionaPedidoMesa('10 Bacalhau')">10 Bacalhau</button>
+                <button class="btnPedido" onclick="adicionaPedidoMesa('10 Anchoveta')">10 Anchoveta</button>
+            </div>
+
+        </div>
+
+
+        <div id="cardRefrigerante" class="cardPedido">
+            <div class="title-img">
+                <h2 class="subtitle-qtd">Caixa de Peixe</h2>
+                <img src="/fish_kit_icon.png" style="height:50px">
+
+            </div>
+            <div class="row-card">
+                <button class="btnPedido" onclick="adicionaPedidoMesa('Caixa Tilápia')">Caixa Tilápia</button>
+
+                <button class="btnPedido" onclick="adicionaPedidoMesa('Caixa Salmão')">Caixa Salmão</button>
+                <button class="btnPedido" onclick="adicionaPedidoMesa('Caixa Bacalhau')"> Caixa Bacalhau</button>
+            </div>
+            <h2 class="subtitle-qtd">Quantidade</h2>
+            <div class="row-card-nivel2">
+                <button class="btnPedido" onclick="adicionaPedidoMesa('10 Caixa Tilápia')">10 Caixa Tilápia</button>
+                <button class="btnPedido" onclick="adicionaPedidoMesa('10 Caixa Salmão')">10 Caixa Salmão</button>
+                <button class="btnPedido" onclick="adicionaPedidoMesa('10 Caixa Bacalhau')">10 Caixa Bacalhau</button>
+                <button class="btnPedido" onclick="adicionaPedidoMesa('10 Caixa Anchoveta')">10 Caixa Anchoveta</button>
+            </div>
+        </div>
+
+        <div id="cardRefrigerante" class="cardPedido">
+            <div class="title-img">
+                <h2 class="subtitle-qtd">Frutos do Mar</h2>
+                <img src="/frutos_mar_icon.png" style="height:50px">
+
+            </div>
+            <div class="row-card">
+
+                <button class="btnPedido" onclick="adicionaPedidoMesa('Camarão')">Camarão</button>
+                <button class="btnPedido" onclick="adicionaPedidoMesa('Lagosta')">Lagosta</button>
+                <button class="btnPedido" onclick="adicionaPedidoMesa('Polvo')">Polvo</button>
+            </div>
+            <div>
+                <h2 class="subtitle-qtd">Quantidade</h2>
+                <div class="row-card-nivel2">
+
+                    <button class="btnPedido" onclick="adicionaPedidoMesa('10 Caixa Camarão')">10 Caixa Tilápia</button>
+                    <button class="btnPedido" onclick="adicionaPedidoMesa('10 Caixa Lagosta')">10 Caixa Salmão</button>
+                    <button class="btnPedido" onclick="adicionaPedidoMesa('10 Caixa Polvo')">10 Caixa Bacalhau</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="cardRefrigerante" class="cardPedido">
+            <div class="title-img">
+                <h2 class="subtitle-qtd">Cliente a Receber</h2>
+                <img src="transporte_icon.png" alt="" style="width:55px">
+
+            </div>
+            <div class="row-card">
+
+                <button class="btnPedido" onclick="adicionaPedidoMesa('Cliente Exemplo 1')">Cliente Exemplo 1</button>
+                <button class="btnPedido" onclick="adicionaPedidoMesa('Cliente exemplo 2')">Cliente exemplo 2</button>
+                <button class="btnPedido" onclick="adicionaPedidoMesa('Cliente Exemplo 3')">Cliente exemplo 3</button>
+            </div>
+        </div>
+
+        <br>
+
+
+
+        <div id="cardPedido" class="cardPedido">
+            <div class="title-img">
+                <h2 class="subtitle-qtd">Numero dos Pedidos</h2>
+                <img src="/add_book_sans_icon.png" style="height:65px">
+            </div>
+            
+            <div>
+                <button id="Mesa1" class="btnMesa" onclick="selecionarMesa('Mesa1')">1</button>
+                <button id="Mesa2" class="btnMesa" onclick="selecionarMesa('Mesa2')">2</button>
+                <button id="Mesa3" class="btnMesa" onclick="selecionarMesa('Mesa3')">3</button>
+                <button id="Mesa4" class="btnMesa" onclick="selecionarMesa('Mesa4')">4</button>
+                <button id="Mesa5" class="btnMesa" onclick="selecionarMesa('Mesa5')">5</button>
+                <button id="Mesa6" class="btnMesa" onclick="selecionarMesa('Mesa6')">6</button>
+                <button id="Mesa7" class="btnMesa" onclick="selecionarMesa('Mesa7')">7</button>
+                <button id="Mesa8" class="btnMesa" onclick="selecionarMesa('Mesa8')">8</button>
+                <button id="Mesa9" class="btnMesa" onclick="selecionarMesa('Mesa9')">9</button>
+                <button id="Mesa10" class="btnMesa" onclick="selecionarMesa('Mesa10')">10</button>
+                <button id="Mesa11" class="btnMesa" onclick="selecionarMesa('Mesa11')">11</button>
+                <button id="Mesa12" class="btnMesa" onclick="selecionarMesa('Mesa12')">12</button>
+            </div>
+            <br>
+
+            <div id="preview" class="preview"> <img
+                    src="book_sans_remove_icon.png" style="height:75px">
+            </div>
+
+            <button class="btnAdicionarPedido" id="btnAdicionarPedido" onclick="criarNovoPedido()">ADICIONAR
+                PEDIDO</button>
+            <button class="btnCancelarPedido" id="btnCancelarPedido" onclick="cancelarPedido()">X - CANCELAR
+                PEDIDO</button>
+
+        </div>
+    </div>
+    </div>
+
+
+    <div id="listaUI" class="listaUI">
+        <center><button class="btnNovoPedido" id="btnAdicionarPedido"
+                onclick="UIlistapedidos('hide'),UInovopedido('show')">NOVO PEDIDO</button>
+            <div id="lista de pedidos">
+            </div>
+        </center>
+    </div>
+
+
+
+    </div>
+
+    <script src="pedidos.js"></script>
+
+
+
+</body>
+
+</html>

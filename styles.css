@@ -210,7 +210,7 @@ div#pedidosUI {
   flex-direction: column;
 }
 .preview {
-  display: flex;
+  display: table;
   align-items: center;
   justify-content: center;
   width: 100%;
